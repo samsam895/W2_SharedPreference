@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Button btn = (Button) findViewById(R.id.btn);
-        final EditText et2 = (EditText) findViewById(R.id.et2);
+        final EditText et2x = (EditText) findViewById(R.id.et2);
         final EditText et= (EditText) findViewById(R.id.et);
 
 
@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
                 editor.putString("First data", n);
                 editor.commit();
 
-                et2.setText(n);
+                et2x.setText(n);
                 Toast.makeText(MainActivity.this,"Your data was save it",Toast.LENGTH_LONG).show();
             }
         });
